@@ -33,7 +33,7 @@ The project is divided into several files for modularity:
    - **S**: Second column (green).
    - **D**: Center column (yellow).
    - **F**: Fourth column (blue).
-   - **G**: Rightmost column (purple).
+   - **G**: Rightmost column (orange).
 3. **Hits and Misses**: If you hit a note, points are added to your score; if you miss, the miss counter increases. Too many misses will end the game.
 4. **Pause/Resume**: Press the pause key (specified on your keyboard) to pause the game. In the pause menu, you can resume, restart, or exit.
 5. **Game End**: The end screen displays the final score and hit accuracy.

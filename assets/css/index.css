@@ -20,10 +20,10 @@ body {
 }
 
 #main-menu {
-  background: url('/assets/images/Background.jpg');
+  background: url('../assets/images/Background.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;;
+  background-size: cover;
 }
 
 #header-image {
