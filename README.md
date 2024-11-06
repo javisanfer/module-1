@@ -1,6 +1,8 @@
 
 ![Iron Hero](assets/images/IronHero.png)
 
+DEMO: https://javisanfer.github.io/module-1/
+
 This project is a rhythm-based video game where the player must hit musical notes in sync with a song, inspired by Guitar Hero. Developed with **JavaScript**, **HTML**, and **CSS**, the game includes key detection, visual effects for hits and misses, and an intuitive interface for an immersive user experience. 
 
 Throughout this project, **DOM manipulation** plays a crucial role, allowing dynamic updates to the game screen, such as adding and removing notes, displaying scores in real time, and visually marking hit zones for successful or missed notes. These elements enhance interactivity and provide immediate feedback, creating a more engaging experience for the player.
