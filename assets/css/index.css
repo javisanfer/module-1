@@ -1,0 +1,300 @@
+body {
+  font-family: 'Jersey 10', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.slides {
+  display: flex;
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+#main-menu {
+  background: url('/assets/images/Background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;;
+}
+
+#header-image {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -75px;      
+}
+
+#game-options{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 15px;
+  margin-top: 25px;
+}
+
+#instructions {
+  font-size: 35px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#start-button {
+  padding: 20px 40px;
+  font-size: 35px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Jersey 10', sans-serif;
+}
+
+#start-button:hover {
+  background-color:red; 
+}
+
+#game-screen {
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+.column {
+  display: inline-block;
+  width: 100px;
+  height: 700px;
+  position: relative;
+  background-color: gray;
+}
+
+.hit-zone {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  top: 700px;
+  left: 10px;
+  opacity: 0.3;
+  transition: opacity 0.1s, background-color 0.1s;
+}
+
+.hit-zone-wrapper {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 690px;
+  left: 0;
+  background-color: lightgray;
+  opacity: 0.5;
+  transition: background-color 0.2s;
+}
+
+.hit-zone-wrapper.active {
+  background-color: green;
+}
+
+.hit-zone-wrapper.miss {
+  background-color: red;
+}
+
+#hit-zone-A { background-color: red; }
+#hit-zone-S { background-color: green; }
+#hit-zone-D { background-color: yellow; }
+#hit-zone-F { background-color: blue; }
+#hit-zone-G { background-color: orange; }
+
+.hit-zone.active {
+  opacity: 1; 
+}
+
+.note {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 10px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.note.hit {
+  background-color: purple !important;
+}
+
+
+#column-A .note {
+  background-color: red;
+}
+
+#column-S .note {
+  background-color: green; 
+}
+
+#column-D .note {
+  background-color: yellow; 
+}
+
+#column-F .note {
+  background-color: blue;
+}
+
+#column-G .note {
+  background-color: orange;
+}
+
+#score {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#end-screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 24px;
+  z-index: 50;
+}
+
+#final-score {
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+#pause-button {
+  padding: 20px 40px;
+  font-size: 35px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Jersey 10', sans-serif;
+  margin-top: 15px;
+}
+
+#pause-button:hover {
+  background-color:red; 
+}
+
+#pause-screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 24px;
+  z-index: 10;
+}
+
+#pause-screen button {
+  padding: 20px 40px;
+  font-size: 35px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Jersey 10', sans-serif;
+  margin-top: 15px;
+}
+
+#pause-screen button:hover {
+  background-color:red; 
+}
+
+#video-container {
+    width: 500px;           
+    height: 500px;          
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;     
+    top: 50px;              
+    left: 20px;             
+    border-radius: 10px;    
+    overflow: hidden;       
+}
+
+#video-player {
+    width: 90%;           
+    height: 90%;
+}
+
+#pause-button {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#restart-button {
+  padding: 20px 40px;
+  font-size: 35px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Jersey 10', sans-serif;
+  margin-top: 15px;
+}
+
+#restart-button button:hover {
+  background-color:red; 
+}
+
+#overlay-image {
+  position: absolute;
+  top: -40px;
+  left: -80px;
+  width: 400px; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+  opacity: 0.7; /* Ajusta la transparencia si es necesario */
+  pointer-events: none; /* Permite que los clics pasen al video si lo deseas */
+}
+
