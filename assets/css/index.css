@@ -20,7 +20,7 @@ body {
 }
 
 #main-menu {
-  background: url('../assets/images/Background.jpg');
+  background: url('https://raw.githubusercontent.com/javisanfer/module-1/main/assets/images/Background.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
