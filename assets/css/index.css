@@ -292,9 +292,9 @@ body {
   position: absolute;
   top: -40px;
   left: -80px;
-  width: 400px; /* Ajusta el tamaño según tus necesidades */
+  width: 400px;
   height: auto;
-  opacity: 0.7; /* Ajusta la transparencia si es necesario */
-  pointer-events: none; /* Permite que los clics pasen al video si lo deseas */
+  opacity: 0.7;
+  pointer-events: none; 
 }
 

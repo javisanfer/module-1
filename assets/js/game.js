@@ -220,7 +220,6 @@ class Game {
     }
 
     clearNoteTimers() {
-        // Cancela todos los temporizadores activos
         this.noteTimers.forEach(noteData => clearTimeout(noteData.timer));
         this.noteTimers = [];
     }
